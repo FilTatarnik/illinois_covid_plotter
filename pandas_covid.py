@@ -9,5 +9,5 @@ illinois_covid_numbers = pd.read_json(
 #illi_nums = pd.DataFrame(illinois_covid_numbers)
 
 #pd.plotting.andrews_curves(illi_nums, 'confirmed_cases')
-illinois_covid_numbers.plot.pie(figsize=(6, 6))
+illinois_covid_numbers.plot(figsize=(6, 6), subplots=True)
 plt.show()
